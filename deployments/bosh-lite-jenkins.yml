@@ -1,6 +1,6 @@
 ---
 name: jenkins
-director_uuid: 51abcb52-334e-44a8-8f3d-00d2c271919e
+director_uuid: 4aabd2cd-389f-48c5-9d9b-14c17b909459
 
 releases:
 - name: jenkins
@@ -478,7 +478,8 @@ resource_pools:
   stemcell:
     name: bosh-warden-boshlite-ubuntu
     version: latest
-  cloud_properties: {}
+  cloud_properties: 
+    ram: 2048
 
 jobs:
 - name: jenkins_master

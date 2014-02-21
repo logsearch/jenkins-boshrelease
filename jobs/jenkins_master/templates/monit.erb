@@ -1,0 +1,14 @@
+check process jenkins_master
+  with pidfile /var/vcap/sys/run/jenkins_master/jenkins_master.pid
+  start program "/var/vcap/jobs/jenkins_master/bin/monit_debugger jenkins_master_ctl '/var/vcap/jobs/jenkins_master/bin/jenkins_master_ctl start'" with timeout 120 seconds
+  stop program "/var/vcap/jobs/jenkins_master/bin/monit_debugger jenkins_master_ctl '/var/vcap/jobs/jenkins_master/bin/jenkins_master_ctl stop'"
+  group vcap
+  if failed host 127.0.0.1 port <%= p("jenkins.server.internal_http_port") %>
+      protocol HTTP request "/cc.xml" then restart
+  if 5 restarts within 5 cycles then timeout
+
+check process nginx_jenkins_master
+  with pidfile /var/vcap/sys/run/jenkins_master/nginx.pid
+  start program "/var/vcap/jobs/jenkins_master/bin/monit_debugger jenkins_master_nginx_ctl '/var/vcap/jobs/jenkins_master/bin/nginx_ctl start'"
+  stop program "/var/vcap/jobs/jenkins_master/bin/monit_debugger jenkins_master_nginx_ctl '/var/vcap/jobs/jenkins_master/bin/nginx_ctl stop'"
+  group vcap

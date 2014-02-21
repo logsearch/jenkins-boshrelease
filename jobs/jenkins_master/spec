@@ -17,6 +17,7 @@ templates:
   helpers/ctl_utils.sh: helpers/ctl_utils.sh
   config/nginx.conf.erb: config/nginx.conf
   config/mime.types: config/mime.types
+  monit.erb: monit
 properties:
   jenkins.admin.password:
     description: Admin user password

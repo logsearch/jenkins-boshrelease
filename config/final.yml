@@ -7,3 +7,4 @@ blobstore:
     secret_access_key: e3uIA4EnWpb9zy1YtWREr/0moGcEdky+2wLfprqb
     encryption_key: PERSONAL_RANDOM_KEY
 final_name: jenkins
+min_cli_version: 1.5.0.pre.1117
