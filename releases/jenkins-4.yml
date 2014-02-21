@@ -1,0 +1,71 @@
+---
+packages:
+- name: bosh-cli
+  version: 1
+  sha1: !binary |-
+    OTA5N2NiYTk1YjA3NDIzYzEyYjVkZjJiNGM4ZGI1YTBhNzcwOGRlMA==
+  fingerprint: !binary |-
+    NDE5OTc2ZjkxOTUzYmRhYjM3Y2UyNzQ3MmJmY2NjNTNkNTU2Njk5Ng==
+  dependencies:
+  - ruby
+- name: cf-cli
+  version: 1
+  sha1: !binary |-
+    YjhiZWM5OGIxMmNlNjZhZmVmOGQ1YjE4MzNmOWI5ZmI5ODhlZWQyZQ==
+  fingerprint: !binary |-
+    YTA5OGQ0MjVkMmM4YTVlZDViOTg3NWY1N2I5YzhjMmQwMzhhZjhhMA==
+  dependencies: []
+- name: git
+  version: 1
+  sha1: !binary |-
+    MjY1MTM3ZjAwMmFkNjBhZjhiMWNiNTUxZWUyMDRlNzc0ZWM2YWJmNQ==
+  fingerprint: !binary |-
+    NDk1NzAxYTM2YjhmNDJmODUwYTQ2ZTg5YzhhNjBjZmQ2ODEwODNlMQ==
+  dependencies: []
+- name: jenkins
+  version: 2
+  sha1: !binary |-
+    ZTIyYWMxZjc2YzViNjgwMmU0YTgwNjJjM2E5OGE5NTIwMTAxYzAxMw==
+  fingerprint: !binary |-
+    MzAyY2FiYTQyNDAyNzcwZmYzNzk0NTQ5ZDVkMGM0ZWM5ODY3NWU3Zg==
+  dependencies: []
+- name: jre
+  version: 1
+  sha1: !binary |-
+    ZTc2NTY5YTNmNTNhNzAyOTAzYTVjYjU5NTVhMTE1MzA0MTlkYmU1OQ==
+  fingerprint: !binary |-
+    MWZhZTg2MjRmNjRjMjcyZGM3MzQ5ODZmOTU5NDVjMDk3MmU0MjZlMw==
+  dependencies: []
+- name: libyaml
+  version: 1
+  sha1: !binary |-
+    NzAwMTNkYzdiYjVkNDVhOTRhYWQ5MWMwNTAxNjJiZTFiNTM4ODBlOA==
+  fingerprint: !binary |-
+    MmM4MzUwYmM2YjYwYjdjNTBmMmI5ZDdkMTllZDAyZTE5YjcyYmYzOA==
+  dependencies: []
+- name: nginx
+  version: 1
+  sha1: !binary |-
+    MTBiMWVhZWQ1YjUwNTI2MDYzM2E3YzNiMzg2NDJiYWQ1ZDQ0ZjI1NQ==
+  fingerprint: !binary |-
+    MjZkODg1ZTYzMTg1NDgzZGQ3MDg1OWJlZDVhMGYxNDIzMmYyM2UxOA==
+  dependencies: []
+- name: ruby
+  version: 1
+  sha1: !binary |-
+    ODAyOTc1ZTA3MTgzZDQxYWMyZWU5YWFjYzU0YzcxMTBlYmRjZGM0NA==
+  fingerprint: !binary |-
+    YTAyODRmM2VmYmJjNDMxOGUwYTliYjU3ZTE5MjQ0MzY0M2RlMzJiMQ==
+  dependencies:
+  - libyaml
+jobs:
+- name: jenkins_master
+  version: 4
+  fingerprint: !binary |-
+    MWEyYjE2NjM3OTk4ZGE2NmM1MDQ5NTcyMWY4MjU1NTc4NzE5ZWNjYQ==
+  sha1: !binary |-
+    Yzk5MzhkMWQzOWU0N2JiOWUzZjZjNzQ2MjQzNzU3YjQ1NmY2OWY5MA==
+commit_hash: 0ab3b1e4
+uncommitted_changes: true
+name: jenkins
+version: 4
