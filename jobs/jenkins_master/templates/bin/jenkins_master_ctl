@@ -47,14 +47,24 @@ case $1 in
     #   )
     # fi
 
-    # pre-install the swarm plugin; user must maintain future upgrades
-    if [ ! -f $JENKINS_HOME/plugins/swarm ] ; then
-      if [ ! -e $JENKINS_HOME/plugins ] ; then
-        mkdir -p $JENKINS_HOME/plugins
-        chown vcap:vcap $JENKINS_HOME/plugins
-      fi
+    # pre-install plugins; user must maintain future upgrades
+    if [ ! -e $JENKINS_HOME/plugins ] ; then
+      mkdir -p $JENKINS_HOME/plugins
+      chown vcap:vcap $JENKINS_HOME/plugins
+    fi
 
+    if [ ! -f $JENKINS_HOME/plugins/swarm ] ; then
       cp /var/vcap/packages/jenkins/plugin-swarm.hpi $JENKINS_HOME/plugins/swarm.hpi
+      chown vcap:vcap $JENKINS_HOME/plugins/swarm.hpi
+    fi
+
+    if [ ! -f $JENKINS_HOME/plugins/swarm ] ; then
+      cp /var/vcap/packages/jenkins/plugin-jquery.hpi $JENKINS_HOME/plugins/jquery.hpi
+      chown vcap:vcap $JENKINS_HOME/plugins/jquery.hpi
+    fi
+
+    if [ ! -f $JENKINS_HOME/plugins/simple-theme-plugin ] ; then
+      cp /var/vcap/packages/jenkins/plugin-simple-theme-plugin.hpi $JENKINS_HOME/plugins/simple-theme-plugin.hpi
       chown vcap:vcap $JENKINS_HOME/plugins/swarm.hpi
     fi
 

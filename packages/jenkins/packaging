@@ -7,3 +7,6 @@ set -u # report the usage of uninitialized variables
 
 cp jenkins/jenkins-1.565.1.war $BOSH_INSTALL_TARGET/jenkins.war
 cp jenkins/plugin-swarm-1.16.hpi $BOSH_INSTALL_TARGET/plugin-swarm.hpi
+cp jenkins/plugin-jquery-1.7.2-1.hpi $BOSH_INSTALL_TARGET/plugin-jquery.hpi
+cp jenkins/plugin-simple-theme-plugin-0.3.hpi $BOSH_INSTALL_TARGET/plugin-simple-theme-plugin.hpi
+

@@ -43,3 +43,33 @@ cf-cli/cf-cli_amd64-v6.0.0-bin.gz:
   object_id: 617c5abc-3406-42f8-92ea-2a2f914ac799
   sha: 777a214708180d5a2dc380b5828dc0a69556702a
   size: 3386095
+jenkins/plugin-jquery-1.7.2-1.hpi:
+  object_id: 643dbb00-039d-4c28-b607-48aabed8f769
+  sha: !binary |-
+    NTIxYWEzYzE5MmJkNjI0MmYzYmM3YTA2NjY0NjE2MDAwZjFjYjIxMg==
+  size: 1672427
+jenkins/plugin-simple-theme-plugin-0.3.hpi:
+  object_id: be50dc88-1e48-4f7b-961d-b8a3d4fc4f2f
+  sha: !binary |-
+    ZmZlYzM5ZDkzZjYyOTE2ZmU2YWFkYmFiNzU1NDRkNDQzYzRlZmU1ZQ==
+  size: 6210
+java/jre-7u67-linux-x64.tar.gz:
+  object_id: 2087fb3b-61c7-433e-ad87-253a499272b2
+  sha: !binary |-
+    N2YxNzNjN2Q2ZjUwZjhhZjhjMDQzZWM1YWY4YWFhZTFlZjMyNGQ0OQ==
+  size: 47006101
+jenkins/jenkins-1.565.1.war:
+  object_id: 0d8715e0-e6d1-43a6-a9ad-2259f60f9135
+  sha: !binary |-
+    YjEzZjI0ZmM2NmY1NmUzYjgzMWRlNTdmMTZlZWE4Y2NhNzlmZWZmMA==
+  size: 68147084
+jenkins-swarm-client/swarm-client-1.16-jar-with-dependencies.jar:
+  object_id: 2011b452-9676-421b-836f-077f6d517c1a
+  sha: !binary |-
+    M2ZiNjljNzZmZjVmMTUxNTgwYmM0NTY0NjQwNWVhZDMxZjc4M2E3Zg==
+  size: 944454
+jenkins/plugin-swarm-1.16.hpi:
+  object_id: 09b7bdb4-c7ca-451c-9d6a-86db06450b5f
+  sha: !binary |-
+    Mjg1ZDA0ZTU4NzdjMWRhNTcxYTg0YTY5Y2RkMzEyZWY2OWJiODcwNg==
+  size: 13370

@@ -6,3 +6,7 @@ files:
 - jenkins/jenkins-1.565.1.war
 # http://maven.jenkins-ci.org/content/repositories/releases/org/jenkins-ci/plugins/swarm/1.16/swarm-1.16.hpi
 - jenkins/plugin-swarm-1.16.hpi
+# https://updates.jenkins-ci.org/download/plugins/jquery/1.7.2-1/jquery.hpi
+- jenkins/plugin-jquery-1.7.2-1.hpi
+# https://updates.jenkins-ci.org/download/plugins/simple-theme-plugin/0.3/simple-theme-plugin.hpi
+- jenkins/plugin-simple-theme-plugin-0.3.hpi
