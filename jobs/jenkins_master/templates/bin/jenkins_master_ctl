@@ -65,7 +65,16 @@ case $1 in
 
     if [ ! -f $JENKINS_HOME/plugins/simple-theme-plugin ] ; then
       cp /var/vcap/packages/jenkins/plugin-simple-theme-plugin.hpi $JENKINS_HOME/plugins/simple-theme-plugin.hpi
-      chown vcap:vcap $JENKINS_HOME/plugins/swarm.hpi
+      chown vcap:vcap $JENKINS_HOME/plugins/simple-theme-plugin.hpi
+
+      #Configure use of the http://doony.org/ theme
+      cat > /var/vcap/store/jenkins_master/org.codefirst.SimpleThemeDecorator.xml <<EOF
+<?xml version='1.0' encoding='UTF-8'?>
+<org.codefirst.SimpleThemeDecorator plugin="simple-theme-plugin@0.3">
+  <cssUrl>https://cdnjs.cloudflare.com/ajax/libs/doony/2.1/css/doony.min.css</cssUrl>
+  <jsUrl>https://cdnjs.cloudflare.com/ajax/libs/doony/2.1/js/doony.min.js</jsUrl>
+</org.codefirst.SimpleThemeDecorator>
+EOF
     fi
 
     exec chpst -u vcap:vcap $java_binary ${flags[*]} \
